@@ -1,0 +1,73 @@
+.app {
+  background: #c2d3ef;
+  width: 90%;
+  max-width: 1000px;
+  max-height: 100vh;
+  margin: 100px auto 0;
+  border-radius: 10px;
+  padding: 30px;
+  h1 {
+    font-size: 50px;
+    color: #001e4d;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+  }
+}
+.quiz-container {
+  padding: 20px 0;
+  h2 {
+    font-size: 30px;
+    color: #001e4d;
+  }
+}
+.btn {
+  font-size: 25px;
+  background: #fff;
+  color: #001e4d;
+  font-weight: 500;
+  width: 100%;
+  border: 1px solid #001e4d;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: left;
+  border-radius: 4px;
+  cursor: pointer;
+  /* :not([disabled])    make sure :hover only use for the case of not disabled  */
+  &:hover:not([disabled]) {
+    background: #001e4d;
+    color: #fff;
+    border-color: #222;
+  }
+}
+.btn:disabled {
+  cursor: no-drop;
+}
+#next-btn {
+  justify-content: center;
+  display: flex;
+  font-size: 30px;
+  background: #001e4d;
+  color: #fff;
+  font-weight: 500;
+  width: 150px;
+  border: 0;
+  padding: 10px;
+  margin: 20px auto 0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+  &:hover {
+    background: #f0f4f9;
+    color: #001e4d;
+    border-color: #001e4d;
+  }
+}
+.correct {
+  background: #53e180;
+}
+.incorrect {
+  background: #ff9393;
+}
